@@ -1,0 +1,51 @@
+*{
+	margin:0;
+    padding: 0;
+	box-sizing: border-box;
+
+}
+
+li{
+    list-style: none
+}
+
+.sidebar{
+    width: 20vh;
+    height: 80vh;
+    display: inline-block;
+    background-color: aqua;
+    position: relative;
+    font-size: 3vh;
+    line-height: 6vh;
+    
+}
+.menu>li{
+    padding: 0 3vh;
+    margin: 3vh 0;
+}
+/* width should be on the top */
+.liul{
+    width: 0;
+    position: absolute;
+    transform: translate(0, -40%) ;
+    left: 20vh;
+    padding-left: 0vh;
+    text-indent:1em;
+    width: 0;
+    background-color: rgba(9, 37, 37, 0.417);
+    overflow: hidden;
+    margin: 0;  
+    line-height: 250%;
+}
+
+li:hover ul{
+    width: 20vh;
+}
+li:hover {
+    background-color: rgba(9, 37, 37, 0.417);
+}
+
+
+
+
+

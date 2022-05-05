@@ -1,0 +1,78 @@
+
+/* 
+:root{
+    
+} */
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Oleo+Script+Swash+Caps:wght@700&display=swap');
+
+*{
+	margin:0;
+	box-sizing: border-box;
+
+}
+
+*{
+    --header-hight:10vh;
+    --box-margin:10vh;
+    --form-width: 40vh;
+    --form-height: 60vh;
+}
+.header{
+    
+    display: flex;
+    height: var(--header-hight);
+    text-align:center;
+    background-color: rgb(247, 246, 248);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px  rgba(247, 246, 248, 0.457);
+    
+}
+
+.forum{
+    color: rgb(5, 5, 5);
+    font-size: 5vh;
+    font-family: "Oleo Script Swash Caps", sans-serif;
+    /* display: inline-block; */
+    margin-left: var(--box-margin);
+    line-height: var(--header-hight);
+    
+}
+.login{
+    padding-left: 20px;
+    display: inline-block;
+    margin:  auto var(--box-margin) auto auto;
+    font-family: "kanit", sans-serif;
+}
+.login div{
+    background-color: rgb(171, 169, 173);
+    display: inline-block;
+    height: 5vh;
+    width: 10vh;
+    line-height: 5vh;
+    border-radius: 10px;  
+}
+
+.login div:hover{
+    background-color: rgb(89, 90, 89);
+    font-size:900;
+}
+
+.ufitimg{
+    display: flex;
+    /* justify-content: center; */
+    flex-wrap: nowrap;
+    flex-direction:column;
+    align-items: center;
+    font-family: "kanit", sans-serif;
+    font-size: 3vw;
+    line-height: 6vw;
+    color: rgba(34, 31, 31, 0.664);
+    font-weight: 800;
+}
+.ufitimg img{
+    width: 40%;
+    margin-top: 18vh;
+    margin-bottom: 2vh;
+}
+
