@@ -3,12 +3,12 @@
 import React from 'react'
 import './welcome.css'
 
-import { useStore } from '../store/indexStore'
+
 import { Outlet } from "react-router-dom";
 import ufit from '../Pictures/ufit.png'
 
 const Welcome = () => {
-    const { loginSore } = useStore()
+  
     const loginLink = "./";
     const regLink = "./"
 

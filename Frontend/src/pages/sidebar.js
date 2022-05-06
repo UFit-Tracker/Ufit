@@ -1,13 +1,14 @@
 import React from 'react'
 
-const Sidebar = () => {
+const Sidebar = ({name}) => {
+    // console.log(name);
     return (
         <>
             {/* <div> */}
             <nav className='sidebar'>
                 
-                <div>Img</div>
-                <div>Name</div>
+                <div className='img'></div>
+                <div className='account'>{name}</div> 
 
 
                 <ul className='menu'>

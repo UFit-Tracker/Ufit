@@ -9,6 +9,11 @@ class LoginStore {
         },
 
     ]
+    profile ={
+        accountName: 'xiaoming',
+        age:12,
+        email: 'xm@gmail.com',
+    }
     constructor(){
         makeAutoObservable(this)
     }
