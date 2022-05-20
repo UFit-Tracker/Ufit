@@ -7,6 +7,8 @@ import Header from './pages/wel_header';
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Home from './pages/home';
+import HomeProfile from './pages/homeProfile';
+import HomePlan from './pages/homePlan';
 
 function App() {
   const [showlog, setLog] = useState('hide')
@@ -33,7 +35,10 @@ function App() {
       <Routes>
         <Route path='/' element={<Welcome />}></Route>
         {/* <Route path='/register' element={<Reg />}></Route> */}
-        <Route path='/home' element={<Home />}></Route>
+        <Route path='/home' element={<Home />}>
+          <Route path='/home/profile' element={<HomeProfile/>}></Route>
+          <Route path='/home/plan' element={<HomePlan />}></Route>        
+        </Route>
       </Routes>
     </Router>
   )

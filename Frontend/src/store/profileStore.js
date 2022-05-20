@@ -1,7 +1,7 @@
 import { makeAutoObservable } from "mobx"
-import {setToken, getToken, clearToken} from "@/utils/index"
 
-class LoginStore {
+class ProfileStore {
+    
     token = getToken()||''
 
     constructor(){
@@ -23,26 +23,20 @@ class LoginStore {
     }
 
 
-    list= [
-        {
-            id:1,
-            name: 'loginbox',
-            show: true
-        },
-
-    ]
     profile ={
         accountName: 'xiaoming',
         age:12,
         email: 'xm@gmail.com',
     }
-
     showLog(){
         console.log('show log')
+    }
+    changeName(n){
+        this.profile.accountName='new name';
     }
 
 
 }
 
-const loginStore = new LoginStore()
-export default loginStore
+const profileStore = new ProfileStore()
+export default profileStore

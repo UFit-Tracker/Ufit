@@ -1,38 +1,40 @@
 import React from 'react'
+// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
-const Sidebar = ({name}) => {
+const Sidebar = ({ name, onProfile, onHome, onPlan }) => {
     // console.log(name);
     return (
         <>
             {/* <div> */}
-            <nav className='sidebar'>
-                
-                <div className='img'></div>
-                <div className='account'>{name}</div> 
+            {/* <Router> */}
+                <nav className='sidebar'>
+
+                    <div className='img'></div>
+                    <div className='account'>{name}</div>
 
 
-                <ul className='menu'>
+                    <ul className='menu'>
+                        <li onClick={onHome}>Home</li>
+                        <li onClick={onProfile}>Profile</li>
+                        <li onClick={onPlan}>Plan</li>
+                        <li >Datas
+                            <ul className='liul'>
+                                <li>Sports</li>
+                                <li>Diet</li>
+                            </ul>
+                        </li>
+                        <li>Settings</li>
+                        <li>Exit</li>
 
 
-                    <li>Profile</li>
-                    <li>Plan</li>
-                    <li >Datas
-                        <ul className='liul'>
-                            <li>Sports</li>
-                            <li>Diet</li>
-                        </ul>
-                    </li>
-                    <li>Settings</li>
-                    <li>Exit</li>
-
-                </ul>
+                    </ul>
 
 
 
-                {/* </div> */}
+                    {/* </div> */}
 
-            </nav>
-
+                </nav>
+            {/* </Router> */}
         </>
     )
 }

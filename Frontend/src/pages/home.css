@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit&family=Source+Sans+Pro&display=swap');
-*{
-	margin:0;
-    padding: 0;
-	box-sizing: border-box;
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* light blue:#ADBCFF
@@ -13,11 +13,19 @@ light orange:#DBD6C8
 dark brown: #968A65 */
 
 
-li{
+li {
     list-style: none
 }
 
-.sidebar{
+.homeBody {
+    display: flex;
+    /* grid-auto-columns:1fr, 2fr; */
+    flex-wrap: nowrap;
+    flex-direction: row;  
+
+}
+
+.sidebar {
     width: 20vh;
     height: 80vh;
     display: inline-block;
@@ -26,45 +34,48 @@ li{
     border-radius: 5px;
     /* box-shadow: inset 0 0 15px 5px #f1f3f361; */
     padding-top: 5vh;
-    
+
 }
-.menu>li{
+
+.menu>li {
     padding: 0 3vh;
     margin: 3vh 0;
     font-size: 3vh;
-    line-height: 6vh;
+    line-height: 5vh;
     font-family: "Source Sans Pro", sans-serif;
 
 }
+
 /* width should be on the top */
-.liul{
+.liul {
     width: 0;
     position: absolute;
-    transform: translate(0, -40%) ;
+    transform: translate(0, -40%);
     left: 20vh;
     padding-left: 0vh;
-    text-indent:1em;
+    text-indent: 1em;
     width: 0;
     background-color: #69b5ada8;
     border-radius: 2px;
     overflow: hidden;
-    margin: 0;  
+    margin: 0;
     line-height: 250%;
 }
 
-li:hover ul{
+li:hover ul {
     width: 20vh;
 }
+
 li:hover {
     background-color: rgba(42, 116, 116, 0.25);
 }
 
-.account{
+.account {
     font-size: 15px;
     text-align: center;
 }
 
-.img{
+.img {
     width: 16vh;
     height: 16vh;
     background-color: beige;
@@ -73,4 +84,13 @@ li:hover {
 }
 
 
+.homeDetail {
+    display: inline-block;
+    /* display: flex; */
+    /* width: 20vh; */
+    /* height: 80vh; */
+    background-color: aqua;
+    overflow: hidden;
+    flex-grow:2;
+}
 
