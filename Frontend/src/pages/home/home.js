@@ -1,6 +1,7 @@
 import React from 'react'
+// import Header from './wel_header'
 import Sidebar from './sidebar'
-import { useStore } from '../store/indexStore'
+import { useStore } from '../../store/index'
 import { observer } from 'mobx-react-lite'
 import './home.css'
 import { Outlet } from 'react-router-dom'
@@ -27,12 +28,14 @@ const Home = () => {
     //    console.log(profileStore.changeName)
     return (
         <>
+            {/* <Header /> */}
             <div className='homeBody'>
+
                 <Sidebar
                     name={name}
-                    onProfile={nav} 
+                    onProfile={nav}
                     onHome={home}
-                    onPlan = {plan} />
+                    onPlan={plan} />
                 <Outlet />
             </div>
 

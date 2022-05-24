@@ -1,8 +1,24 @@
 import { makeAutoObservable } from "mobx"
+import {setToken, getToken, clearToken} from '@/utils/index'
+import {http} from '@/utils/http'
+import { useAuth0 } from "@auth0/auth0-react";
+
 
 class ProfileStore {
     
     token = getToken()||''
+
+    log = false
+
+    getLog = ()=>{
+        const { user, isAuthenticated } = useAuth0()
+        const log = getToken()
+        if(log){
+            this.log = true
+        }else{
+            this.log = false
+        }
+    }
 
     constructor(){
         makeAutoObservable(this)

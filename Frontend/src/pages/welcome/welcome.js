@@ -2,29 +2,14 @@
 
 import React from 'react'
 import './welcome.css'
+// import Header from './wel_header';
 
 
 import { Outlet } from "react-router-dom";
-import ufit from '../Pictures/ufit.png'
+import ufit from '@/Pictures/ufit.png'
 
 const Welcome = () => {
   
-    const loginLink = "./";
-    const regLink = "./"
-
-
-
-    // const showLog = () => {
-    //     setLog('show')
-    //     console.log('show login box')
-    //     console.log()
-    // }
-    // const showReg = () => {
-    //     setReg('show')
-    //     console.log('show reg box')
-    //     console.log()
-    // }
-
 
     return (
         <>
@@ -32,7 +17,9 @@ const Welcome = () => {
                 onLog={() => showLog()}
                 onReg={() => showReg()}
             /> */}
+            {/* <Header/> */}
             <div className='ufitimg'>
+                
                 <img src={ufit} />
                 <p>Your best fitness and diet companion</p>
             </div>

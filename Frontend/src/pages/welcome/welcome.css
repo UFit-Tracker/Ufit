@@ -1,0 +1,30 @@
+
+/* 
+:root{
+    
+} */
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Oleo+Script+Swash+Caps:wght@700&display=swap');
+
+
+
+
+
+.ufitimg{
+    display: flex;
+    /* justify-content: center; */
+    flex-wrap: nowrap;
+    flex-direction:column;
+    align-items: center;
+    font-family: "kanit", sans-serif;
+    font-size: 3vw;
+    line-height: 6vw;
+    color: rgba(34, 31, 31, 0.664);
+    font-weight: 800;
+}
+.ufitimg img{
+    width: 40%;
+    margin-top: 18vh;
+    margin-bottom: 2vh;
+}
+

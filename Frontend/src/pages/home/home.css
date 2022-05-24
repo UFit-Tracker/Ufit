@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit&family=Source+Sans+Pro&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 /* light blue:#ADBCFF
 half-dark blue:#6977B5
@@ -24,6 +20,11 @@ li {
     flex-direction: row;  
 
 }
+
+
+
+
+
 
 .sidebar {
     width: 20vh;

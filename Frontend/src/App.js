@@ -1,14 +1,15 @@
 // import logo from './logo.svg';
-import Welcome from './pages/welcome';
+import Welcome from './pages/welcome/welcome';
 // import Reg from './pages/reg';
 import { useState } from 'react';
-import './App.css';
 import Header from './pages/wel_header';
-
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import Home from './pages/home';
-import HomeProfile from './pages/homeProfile';
-import HomePlan from './pages/homePlan';
+import { unstable_HistoryRouter as HistoryRouter, BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { history } from './utils/history';
+import { AuthComponent } from '@/components/AuthComponent'
+import Home from './pages/home/home';
+import HomeProfile from './pages/home/profile/homeProfile';
+import HomePlan from './pages/home/plan/homePlan';
+import  './App.scss'
 
 function App() {
   const [showlog, setLog] = useState('hide')
@@ -26,21 +27,23 @@ function App() {
 
   return (
 
-    <Router>
+    <HistoryRouter history={history}>
+      <Header></Header>
 
-      <Header
-        onLog={() => showLog()}
-        onReg={() => showReg()}
-      />
       <Routes>
         <Route path='/' element={<Welcome />}></Route>
         {/* <Route path='/register' element={<Reg />}></Route> */}
-        <Route path='/home' element={<Home />}>
-          <Route path='/home/profile' element={<HomeProfile/>}></Route>
-          <Route path='/home/plan' element={<HomePlan />}></Route>        
+        <Route path='/home' element={
+          <AuthComponent>
+            <Home />
+          </AuthComponent>
+
+        }>
+          <Route path='/home/profile' element={<HomeProfile />}></Route>
+          <Route path='/home/plan' element={<HomePlan />}></Route>
         </Route>
       </Routes>
-    </Router>
+    </HistoryRouter>
   )
 
 }
