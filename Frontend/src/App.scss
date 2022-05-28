@@ -41,22 +41,25 @@
 
 .login {
     position: relative;
-    width: 20vh;
+    width: 25vh;
     // padding-right: var(--box-margin);
     text-align: center;
     font-family: "kanit", sans-serif;
     line-height: 10vh;
+    right: 5vh;
 
     .logbox {
         background-color: rgb(171, 169, 173);
-        display: inline-block;
+        // display: inline-block;
         height: 5vh;
         width: 10vh;
         line-height: 5vh;
         border-radius: 10px;
         text-align: center;
-        
-        left: 5vh;
+        right: 5vh;
+        margin-top:2.5vh;
+        float: left;
+        margin-left: 2vh;
         
 
     }
@@ -68,6 +71,7 @@
 
 .hide {
     visibility:hidden;
+    position: absolute;
 }
 
 

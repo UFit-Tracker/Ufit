@@ -24,19 +24,7 @@ class ProfileStore {
         makeAutoObservable(this)
 
     }
-    getToken = async({username, password})=>{
-        // console.log('token', username, password)
-        const res = await http.post('#', 
-        // qs.stringify({username, password})
-        {username, password}
-        )
 
-        // use token to store
-        this.token = res.data.token
-
-        setToken(res.data.token)
-
-    }
 
 
     profile ={
