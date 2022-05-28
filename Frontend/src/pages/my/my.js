@@ -30,14 +30,14 @@ const My = () => {
         
 
     const home = () => {
-        navigate('/', { replace: false })
+        navigate('/my', { replace: false })
     }
     const nav = () => {
-        navigate('/home/profile', { replace: false })
+        navigate('/my/profile', { replace: false })
     }
 
     const plan = () => {
-        navigate('/home/plan', { replace: false })
+        navigate('/my/plan', { replace: false })
     }
 
 
