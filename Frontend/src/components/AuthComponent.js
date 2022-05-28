@@ -1,13 +1,15 @@
-import { getToken } from "@/utils";
+// import { getToken } from "@/utils";
 import {Navigate} from 'react-router-dom'
+import { useAuth0 } from '@auth0/auth0-react'
 
 function AuthComponent ({ children}){
-    const isToken = getToken()
-    if(isToken){
+    const {isAuthenticated } = useAuth0()
+    // const isToken = getToken()
+    if(isAuthenticated){
         return <>{children}</>
 
     }else {
-        return <Navigate to='/welcome' replace />
+        return <Navigate to='/' replace />
     }
 }
 

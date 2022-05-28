@@ -4,17 +4,17 @@ import Sidebar from './sidebar'
 import { useStore } from '../../store/index'
 import { observer } from 'mobx-react-lite'
 import { setToken } from '@/utils'
-import './home.css'
+import './my.css'
 import { Outlet } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 import { useAuth0 } from '@auth0/auth0-react'
-const Home = () => {
+const My = () => {
 
     const { profileStore } = useStore()
     const name = profileStore.profile.accountName
     function changeName() { profileStore.changeName() }
     const navigate = useNavigate()
-    const { getAccessTokenSilently } = useAuth0();
+    const { getAccessTokenSilently, isAuthenticated } = useAuth0();
 
 
     useEffect(() => {
@@ -30,7 +30,7 @@ const Home = () => {
         
 
     const home = () => {
-        navigate('/home', { replace: false })
+        navigate('/', { replace: false })
     }
     const nav = () => {
         navigate('/home/profile', { replace: false })
@@ -43,6 +43,7 @@ const Home = () => {
 
     //    console.log(profileStore.changeName)
     return (
+        isAuthenticated&&(
         <>
             {/* <Header /> */}
             <div className='homeBody'>
@@ -57,6 +58,7 @@ const Home = () => {
 
         </>
     )
+    )
 }
 
-export default observer(Home)
+export default observer(My)

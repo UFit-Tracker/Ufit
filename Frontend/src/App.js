@@ -6,9 +6,9 @@ import Header from './pages/wel_header';
 import { unstable_HistoryRouter as HistoryRouter, BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { history } from './utils/history';
 import { AuthComponent } from '@/components/AuthComponent'
-import Home from './pages/home/home';
-import HomeProfile from './pages/home/profile/homeProfile';
-import HomePlan from './pages/home/plan/homePlan';
+import My from './pages/my/my';
+import HomeProfile from './pages/my/profile/homeProfile';
+import HomePlan from './pages/my/plan/homePlan';
 import  './App.scss'
 
 function App() {
@@ -33,14 +33,14 @@ function App() {
       <Routes>
         <Route path='/' element={<Welcome />}></Route>
         {/* <Route path='/register' element={<Reg />}></Route> */}
-        <Route path='/home' element={
+        <Route path='/my' element={
           <AuthComponent>
-            <Home />
+            <My />
           </AuthComponent>
 
         }>
-          <Route path='/home/profile' element={<HomeProfile />}></Route>
-          <Route path='/home/plan' element={<HomePlan />}></Route>
+          <Route path='/my/profile' element={<HomeProfile />}></Route>
+          <Route path='/my/plan' element={<HomePlan />}></Route>
         </Route>
       </Routes>
     </HistoryRouter>
