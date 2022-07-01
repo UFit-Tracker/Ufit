@@ -54,6 +54,7 @@ const MyPage = () => {
                     onPlan={plan} />
                 <Outlet />
             </div>
+            
 
         </>
     

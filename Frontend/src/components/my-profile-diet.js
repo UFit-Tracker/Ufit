@@ -2,7 +2,7 @@ import React from 'react'
 
 const MyProfileDiet = () => {
   return (
-    <div className='w-[10rem] h-[20rem] bg-[#dfsd35]'>MyProfileDiet</div>
+    <div className='bg-black text-gray-200 '>MyProfileDiet lalala</div>
   )
 }
 
