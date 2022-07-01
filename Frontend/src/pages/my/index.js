@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
 import { observer } from 'mobx-react-lite'
 import { setToken } from '@/utils'
-import MyPage from './my-page'
+import MyPage from '../my-page'
 import { useAuth0 } from '@auth0/auth0-react'
 
 const My= () => {

@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import { useStore } from '@/store'
 import { getToken } from '@/utils/index'
 import { useNavigate, useLocation } from 'react-router-dom'
-
+import './index.css'
 
 
 function Header({ onLog, onReg }) {

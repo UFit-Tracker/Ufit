@@ -1,10 +1,13 @@
 import React from 'react'
-import MyProfileDiet from '@/components/my-profile-diet'
+import MyProfileForm from '@/components/my-profile-form'
 
 
 const MyProfile = () => {
     return (
-        <><MyProfileDiet /></>
+        <>
+        <MyProfileForm />
+        </>
+
 
     )
 }

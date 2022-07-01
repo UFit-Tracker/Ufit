@@ -7,6 +7,7 @@ import './welcome.css'
 
 import { Outlet } from "react-router-dom";
 import ufit from '@/Pictures/ufit.png'
+import Header from '@/components/header';
 
 const Welcome = () => {
   
@@ -17,6 +18,7 @@ const Welcome = () => {
                 onLog={() => showLog()}
                 onReg={() => showReg()}
             /> */}
+            {/* <Header/> */}
             {/* <Header/> */}
             <div className='ufitimg'>
                 

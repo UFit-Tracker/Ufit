@@ -1,13 +1,14 @@
 import React, {useEffect} from 'react'
 // import Header from './wel_header'
-import Sidebar from '../../components/sidebar'
+import Sidebar from '@/components/siderbar'
 import { useStore } from '../../store/index'
 import { observer } from 'mobx-react-lite'
 import { setToken } from '@/utils'
-import './my.css'
+import './my-page.css'
 import { Outlet } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 import { useAuth0 } from '@auth0/auth0-react'
+import Header from '@/components/header'
 const MyPage = () => {
 
     const { profileStore } = useStore()
@@ -45,7 +46,9 @@ const MyPage = () => {
     return (
         <>
             {/* <Header /> */}
-            <div className='homeBody'>
+            
+            <div className='mypage'>
+           
 
                 <Sidebar
                     name={name}

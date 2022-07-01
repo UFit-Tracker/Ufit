@@ -2,16 +2,15 @@ import React from 'react';
 import Welcome from './pages/welcome/welcome';
 // import Reg from './pages/reg';
 import { useState } from 'react';
-import Header from './pages/wel_header';
+import Header from './components/header';
 import { unstable_HistoryRouter as HistoryRouter, BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { history } from './utils/history';
 import { AuthComponent } from '@/components/AuthComponent'
 
 
-import HomePlan from './pages/my/plan/homePlan';
+import HomePlan from './components/plan/homePlan';
 import  './App.css'
-import MyPage from './pages/my/my-page';
-import My from './pages/my';
+import MyPage from './pages/my-page';
 import MyProfile from './pages/my/my-profile';
 
 function App() {
@@ -31,14 +30,14 @@ function App() {
   return (
 
     <HistoryRouter history={history}>
-      <Header></Header>
+      <Header/>
 
       <Routes>
         <Route path='/' element={<Welcome />}></Route>
         {/* <Route path='/register' element={<Reg />}></Route> */}
         <Route path='/my' element={
           <AuthComponent>
-            <My/>
+            <MyPage/>
           </AuthComponent>
 
         }>

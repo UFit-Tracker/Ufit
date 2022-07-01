@@ -1,45 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Source+Sans+Pro&display=swap');
-
-
-
-/* light blue:#ADBCFF
-half-dark blue:#6977B5
-dark blue:#323C69
-light orange:#DBD6C8
-dark brown: #968A65 */
-
-
-li {
-    list-style: none
-}
-
-.homeBody {
-    display: flex;
-    /* grid-auto-columns:1fr, 2fr; */
-    flex-wrap: nowrap;
-    flex-direction: row;  
-
-}
-
-
-
-
-
-
 .sidebar {
-    width: 20vh;
-    height: 80vh;
+    width: 12rem;
+    height: 100%;
     display: inline-block;
-    background-color: #4a48426f;
+    background-color: rgb(247, 246, 248);
     position: relative;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     /* box-shadow: inset 0 0 15px 5px #f1f3f361; */
     padding-top: 5vh;
 
 }
 
 .menu>li {
-    padding: 0 3vh;
+    padding: 0 2.3rem;
     margin: 3vh 0;
     font-size: 3vh;
     line-height: 5vh;
@@ -63,11 +35,11 @@ li {
     line-height: 250%;
 }
 
-li:hover ul {
+.menu li:hover ul {
     width: 20vh;
 }
 
-li:hover {
+.menu li:hover {
     background-color: rgba(42, 116, 116, 0.25);
 }
 
@@ -83,15 +55,3 @@ li:hover {
     margin: 2vh auto;
     border-radius: 50%;
 }
-
-
-.homeDetail {
-    display: inline-block;
-    /* display: flex; */
-    /* width: 20vh; */
-    /* height: 80vh; */
-    background-color: aqua;
-    overflow: hidden;
-    flex-grow:2;
-}
-
