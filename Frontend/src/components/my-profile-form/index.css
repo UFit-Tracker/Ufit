@@ -38,6 +38,15 @@
 
 .profile-img {
     margin: auto auto;
+    
+}
+
+.profile-img > li{
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: "kanit", sans-serif;
+
 }
 
 .name-ufit{
@@ -67,7 +76,7 @@
 .name-ufit h3{
     border-bottom: 1px solid black;
     border-width: 2px;
-    
+
 }
 
 

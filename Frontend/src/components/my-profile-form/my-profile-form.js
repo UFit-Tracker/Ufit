@@ -32,7 +32,7 @@ const MyProfileFormIndex = () => {
                     <ul className='basicInfo'>
                         <li className='profile-img'>
                             <img src={ufit}></img>
-                            <li>{tempProfile.name}</li>
+                            <li className='name'>{tempProfile.name}</li>
 
                         </li >
                         <li className='name-ufit'>
