@@ -22,7 +22,7 @@
 .header {
     display: flex;
     height: var(--header-hight);
-    // 
+    
     background-color: rgb(247, 246, 248);
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgba(247, 246, 248, 0.457);
@@ -42,27 +42,28 @@
 .login {
     position: relative;
     width: 25vh;
-    // padding-right: var(--box-margin);
+    padding-right: var(--box-margin);
     text-align: center;
     font-family: "kanit", sans-serif;
     line-height: 10vh;
     right: 5vh;
 
-    .logbox {
-        background-color: rgb(171, 169, 173);
-        // display: inline-block;
-        height: 5vh;
-        width: 10vh;
-        line-height: 5vh;
-        border-radius: 10px;
-        text-align: center;
-        right: 5vh;
-        margin-top:2.5vh;
-        float: left;
-        margin-left: 2vh;
-    }
 }
 
+.login 
+.logbox {
+    background-color: rgb(171, 169, 173);
+    display: inline-block;
+    height: 5vh;
+    width: 10vh;
+    line-height: 5vh;
+    border-radius: 10px;
+    text-align: center;
+    right: 5vh;
+    margin-top:2.5vh;
+    float: left;
+    margin-left: 2vh;
+}
 .show {
     visibility: visible;
 }
