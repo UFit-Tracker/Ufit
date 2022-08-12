@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Oleo+Script+Swash+Caps:wght@700&display=swap');
+
+
+.profile-box {
+    width: calc(100vw - 12rem);
+    /* background-color: red; */
+    display: grid;
+    align-items: center;
+    justify-items: center
+}
+
+.profile-form {
+    margin: auto;
+    width: 90%;
+    height: 90%;
+    background-color: rgba(232, 233, 232, 0.237);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.basicInfo {
+    /* width: 10rem; */
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+
+}
+
+.basicInfo img {
+    width: 13rem;
+    height: 13rem;
+    overflow: hidden;
+    border-radius: 2rem;
+    box-shadow: 2px 2px 5px grey;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.profile-img {
+    margin: auto auto;
+    
+}
+
+.profile-img > li{
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: "kanit", sans-serif;
+
+}
+
+.name-ufit{
+    margin: 1rem auto;
+    /* display: grid; */
+    font-family: "kanit", sans-serif;
+    margin-top: 2rem;
+
+}
+.name-ufit li{
+    width: 18rem;
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    /* background-color: rgb(236, 232, 227);
+    border-radius: 2rem;
+    padding: 0.3rem 1rem; */
+}
+
+.name-ufit span{
+    font-size: 1.2rem;
+
+    background-color: rgb(236, 232, 227);
+    border-radius: 2rem;
+    padding: 0.2rem 0.1rem 0.2rem 0.4rem;
+    margin-right: 0.5rem;
+}
+.name-ufit h3{
+    border-bottom: 1px solid black;
+    border-width: 2px;
+
+}
+
+

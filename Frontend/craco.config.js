@@ -8,5 +8,16 @@ module.exports = {
 
         '@': path.resolve(__dirname, 'src')
       }
-    }
+    },
+    style: {
+      postcss: {
+        plugins: [
+          // require('tailwindcss'),
+          // require('autoprefixer'),
+        ],
+      },
+    },
+    eslint: {
+      // enable: false
+    },
   }

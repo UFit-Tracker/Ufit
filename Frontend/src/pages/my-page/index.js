@@ -1,14 +1,15 @@
 import React, {useEffect} from 'react'
 // import Header from './wel_header'
-import Sidebar from './sidebar'
+import Sidebar from '@/components/siderbar'
 import { useStore } from '../../store/index'
 import { observer } from 'mobx-react-lite'
 import { setToken } from '@/utils'
-import './my.css'
+import './my-page.css'
 import { Outlet } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 import { useAuth0 } from '@auth0/auth0-react'
-const My = () => {
+import Header from '@/components/header'
+const MyPage = () => {
 
     const { profileStore } = useStore()
     const name = profileStore.profile.accountName
@@ -30,23 +31,24 @@ const My = () => {
         
 
     const home = () => {
-        navigate('/my', { replace: false })
+        navigate('/dev', { replace: false })
     }
     const nav = () => {
-        navigate('/my/profile', { replace: false })
+        navigate('profile', { replace: false })
     }
 
     const plan = () => {
-        navigate('/my/plan', { replace: false })
+        navigate('plan', { replace: false })
     }
 
 
     //    console.log(profileStore.changeName)
     return (
-        isAuthenticated&&(
         <>
             {/* <Header /> */}
-            <div className='homeBody'>
+            
+            <div className='mypage'>
+           
 
                 <Sidebar
                     name={name}
@@ -55,10 +57,11 @@ const My = () => {
                     onPlan={plan} />
                 <Outlet />
             </div>
+            
 
         </>
-    )
+    
     )
 }
 
-export default observer(My)
+export default observer(MyPage)

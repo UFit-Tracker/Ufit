@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Source+Sans+Pro&display=swap');
+
+
+
+/* light blue:#ADBCFF
+half-dark blue:#6977B5
+dark blue:#323C69
+light orange:#DBD6C8
+dark brown: #968A65 */
+
+
+li {
+    list-style: none
+}
+
+/*  */
+
+
+.mypage{
+    width: 100vw;
+    height: calc(100vh - 4rem);
+    display: flex;
+    
+}
+
+
+
+
+
+

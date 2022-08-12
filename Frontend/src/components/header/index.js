@@ -1,10 +1,10 @@
-// import{useNavigate } from 'react-router-dom'
+import React from 'react';
 import { useAuth0 } from '@auth0/auth0-react'
 import { useState, useEffect } from 'react'
 import { useStore } from '@/store'
 import { getToken } from '@/utils/index'
 import { useNavigate, useLocation } from 'react-router-dom'
-
+import './index.css'
 
 
 function Header({ onLog, onReg }) {
